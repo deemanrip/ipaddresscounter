@@ -1,0 +1,12 @@
+<Configuration status="debug" name="ipaddcounter" packages="">
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %p %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="debug" additivity="false">
+            <appenderRef ref="console" />
+        </Root>
+    </Loggers>
+</Configuration>
