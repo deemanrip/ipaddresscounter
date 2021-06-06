@@ -6,3 +6,6 @@ So, we can change the sign of the number and set it to BitSet, then we can just 
 
 The application is implemented as simple console app. It can be built to jar with manifest using maven (clean package).
 The app accepts one argument - path to file with ip addresses.
+
+Application was used to count unique addresses from mentioned big file,
+and the result is 1_000_000_000.
