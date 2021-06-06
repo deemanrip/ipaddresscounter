@@ -1,5 +1,8 @@
 package com.iukhlin.task.ipaddcounter;
 
+/**
+ * This class is used to convert IPv4 address to Java's int
+ */
 public class IpAddStrToIntConverter {
     public int convert(String ipAddStr) {
         String[] octets = ipAddStr.split("\\.");

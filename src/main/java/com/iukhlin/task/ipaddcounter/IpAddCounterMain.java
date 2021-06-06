@@ -1,5 +1,8 @@
 package com.iukhlin.task.ipaddcounter;
 
+/**
+ * Entry point of the app. Checks that the argument with file path is specified.
+ */
 public class IpAddCounterMain {
     public static void main(String[] args) {
         if(args.length < 1) {

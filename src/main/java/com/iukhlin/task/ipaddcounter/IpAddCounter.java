@@ -7,6 +7,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+/**
+ * This class reads IP addresses from passed path line by line,
+ * converts to int and sets converted address to wrapper storage.
+ * Then, returns unique count of all addresses from file.
+ */
 public class IpAddCounter {
     private static final Logger logger = LogManager.getLogger(IpAddCounter.class);
 
