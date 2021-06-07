@@ -13,11 +13,12 @@ public class IpAddBitStorage {
         if (ipAdd >= 0) {
             positive.set(ipAdd);
         } else {
-            negative.set(-ipAdd);
+            int ipAddToSet = ipAdd == Integer.MIN_VALUE ? 0 : ipAdd;
+            negative.set(-ipAddToSet);
         }
     }
 
     public long getIpAddUniqueCount() {
-        return positive.cardinality() + negative.cardinality();
+        return (long)positive.cardinality() + negative.cardinality();
     }
 }
